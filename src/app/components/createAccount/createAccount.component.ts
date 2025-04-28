@@ -24,4 +24,8 @@ export class CreateAccountComponent {
       userName: "hola"
     }
   }
+
+  addUser() {
+
+  }
 }
