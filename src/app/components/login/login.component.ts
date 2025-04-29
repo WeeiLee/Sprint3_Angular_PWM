@@ -25,4 +25,5 @@ export class LoginComponent {
       .then(() => alert('Sesión iniciada'))
       .catch(err => alert(err.message));
   }
+
 }
