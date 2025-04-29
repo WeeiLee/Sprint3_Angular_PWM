@@ -1,17 +1,17 @@
 import {inject, Injectable} from '@angular/core';
 import {Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from '@angular/fire/auth';
 import {User} from '../models/user.interface';
+import {FirestoreService} from './firestore.service';
 import { authState } from '@angular/fire/auth';
 import { User as FirebaseUser } from 'firebase/auth';
 import {Observable} from 'rxjs';
-import {UserService} from './user.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   private auth = inject(Auth);
-  private firestoreService = inject(UserService);
+  private firestoreService = inject(FirestoreService);
 
   signUp(userData: User) {
     return createUserWithEmailAndPassword(this.auth, userData.email, userData.password!).then(userCredential => {
@@ -24,13 +24,14 @@ export class AuthService {
         email: userData.email,
         name: userData.name,
         birthday: userData.birthday,
-        profilePhoto: userData.profilePhoto,
+        imageProfile: userData.imageProfile,
         contact: userData.contact,
         request: userData.request,
         chat: userData.chat,
       };
 
-      return this.firestoreService.addNewUser(user.uid, newUser);
+      //con el servicio de firestore almacenamos el user
+      return this.firestoreService.setNewUser(newUser, user.uid);
     });
   }
 
@@ -40,10 +41,6 @@ export class AuthService {
 
   getAuthState(): Observable<FirebaseUser | null> {
     return authState(this.auth);
-  }
-
-  getCurrentUser(){
-    return this.auth.currentUser?.uid;
   }
 
 }
