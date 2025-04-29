@@ -1,5 +1,5 @@
 import {AbstractControl, AsyncValidatorFn, ValidationErrors, ValidatorFn} from '@angular/forms';
-import {UserService} from '../services/user.service'
+import {FirestoreService} from '../services/firestore.service';
 import {map, take} from 'rxjs';
 
 export const passwordMatchValidator: ValidatorFn = (control: AbstractControl): ValidationErrors | null => {
@@ -42,9 +42,9 @@ export const dateValidValidatorControl: ValidatorFn = (control: AbstractControl)
 
 //validador asicrono pq necesita consultar a firestore y
 //esperar por esa respuesta
-export function userNameExistsValidator(userService: UserService): AsyncValidatorFn {
+export function userNameExistsValidator(firestoreService: FirestoreService): AsyncValidatorFn {
   return (control: AbstractControl) => {
-    return userService.getUsers().pipe(
+    return firestoreService.getUsers().pipe(
       take(1),
       map(users => {
         const exists = users.find(user => user.name === control.value);
