@@ -4,9 +4,8 @@ export interface User {
   password?: string;  // solo para creación en auth, no se guarda en firestore
   name: string;
   birthday: string;
-  profilePhoto: string;
-  createdAt?: Date;
-  contact?:string[];
-  request?:string[];
-  chat?:{[key:string]:number[]};
+  imageProfile: string;
+  contact: [];
+  request: [];
+  chat: {[key: string]: number[]}
 }

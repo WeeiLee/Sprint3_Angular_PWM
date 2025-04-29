@@ -10,15 +10,12 @@ import {
 import {
   dateFutureValidatorControl,
   dateValidValidatorControl,
-  passwordMatchValidator,
-  userNameExistsValidator
+  passwordMatchValidator
 } from '../../validators/createAccount.validator'
 import {AuthService} from '../../services/auth.service';
 import {User} from '../../models/user.interface';
 import { Router } from '@angular/router';
 import { toast } from 'ngx-sonner';
-import {UserService} from '../../services/user.service';
-
 
 @Component({
   selector: 'app-createAccount',
@@ -29,14 +26,13 @@ import {UserService} from '../../services/user.service';
 })
 export class CreateAccountComponent {
   private authService = inject(AuthService);
-  private userService = inject(UserService);
   private router = inject(Router);
 
   user: User = {
     email: '',
     name: '',
     birthday: '',
-    profilePhoto: 'assets/images/icons/0.jpg',
+    imageProfile: '../../../assets/images/icons/0.jpg',
     contact: [],
     request: [],
     chat: {}
@@ -52,7 +48,7 @@ export class CreateAccountComponent {
     email: ['', [Validators.required, Validators.email]], //nunca será null, solo string
     password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
     password_confirmation: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
-    name: ['', [Validators.required], [userNameExistsValidator(this.userService)]],
+    name: ['', Validators.required],
     birthday: ['', [Validators.required, dateFutureValidatorControl, dateValidValidatorControl]],
   }, {validators: [passwordMatchValidator]});
 
@@ -75,14 +71,6 @@ export class CreateAccountComponent {
     const month = (today.getMonth() + 1).toString().padStart(2, '0');
     const day = today.getDate().toString().padStart(2, '0');
     return `${year}-${month}-${day}`;
-  }
-
-  ngOnInit() {
-    /*this.userService.getUsers().subscribe(users => {
-      for (const user of users) {
-        console.log(user);
-      }
-    })*/
   }
 
 }
