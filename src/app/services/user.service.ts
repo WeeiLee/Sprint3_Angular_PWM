@@ -1,17 +1,15 @@
-import {inject, Injectable} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {
-  getFirestore,
-  addDoc,
-  collection,
-  doc,
-  collectionData,
-  docData,
-  getDoc,
   arrayUnion,
-  arrayRemove,
-  Firestore, setDoc, updateDoc
+  collection,
+  collectionData,
+  doc,
+  docData,
+  Firestore,
+  setDoc,
+  updateDoc
 } from '@angular/fire/firestore';
-import { User } from '../models/user.interface';
+import {User} from '../models/user.interface';
 import {Observable} from 'rxjs';
 
 @Injectable({
@@ -19,30 +17,21 @@ import {Observable} from 'rxjs';
 })
 export class UserService {
 
-  constructor(
-    private firestore: Firestore) {}
+  constructor(private firestore: Firestore) {}
 
-  async addNewUser(id:string, user:User) {
-    try {
-      const userRef = doc(this.firestore, `users/${id}`);
-      await setDoc(userRef, user);
-    }catch (error) {
-      console.log("Error de agregar usuario", error);
-    }
-  }
-
-  getUserByID(id:string):Observable<User> {
+  addNewUser(id: string, user: User) {
     const userRef = doc(this.firestore, `users/${id}`);
-    return docData(userRef, {idField:'id'}) as Observable<User>;
+    return setDoc(userRef, user);
   }
 
-  async editUser(id:string, data:Partial<User>) {
-    try {
-      const userRef = doc(this.firestore, `users/${id}`);
-      await updateDoc(userRef, data);
-    }catch (error) {
-      console.log("Error de editar perfil", error);
-    }
+  getUserByID(id: string): Observable<User> {
+    const userRef = doc(this.firestore, `users/${id}`);
+    return docData(userRef) as Observable<User>;
+  }
+
+  editUser(id: string, data: Partial<User>) {
+    const userRef = doc(this.firestore, `users/${id}`);
+    return updateDoc(userRef, data);
   }
 
   getUsers(): Observable<User[]> {
@@ -50,24 +39,8 @@ export class UserService {
     return collectionData(usersRef, {idField: 'id'}) as Observable<User[]>;
   }
 
-
-  async addNewContact(currentId: string, requestId: string) {
-    try {
-      const userRef = doc(this.firestore, `users/${currentId}`);
-      await updateDoc(userRef, { request: arrayRemove(requestId)});
-      await updateDoc(userRef, { contact: arrayUnion(requestId)});
-    }catch (error) {
-      console.log("Error de añadir al contacto", error);
-    }
+  addNewContact(id: string) {
+    const userRef = doc(this.firestore, `users/${id}`);
+    return updateDoc(userRef, { contact: arrayUnion(id) });
   }
-
-  async rejectInvitation(currentId: string, requestId: string) {
-    try {
-      const userRef = doc(this.firestore, `users/${currentId}`);
-      await updateDoc(userRef, { request: arrayRemove(requestId)});
-    }catch (error) {
-      console.log("Error de añadir al contacto", error);
-    }
-  }
-
 }
