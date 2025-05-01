@@ -17,7 +17,7 @@ import {AuthService} from '../../services/auth.service';
 import {User} from '../../models/user.interface';
 import { Router } from '@angular/router';
 import { toast } from 'ngx-sonner';
-import {FirestoreService} from '../../services/firestore.service';
+import {UserService} from '../../services/user.service';
 
 
 @Component({
@@ -29,14 +29,14 @@ import {FirestoreService} from '../../services/firestore.service';
 })
 export class CreateAccountComponent {
   private authService = inject(AuthService);
-  private firestoreService = inject(FirestoreService);
+  private userService = inject(UserService);
   private router = inject(Router);
 
   user: User = {
     email: '',
     name: '',
     birthday: '',
-    imageProfile: 'assets/images/icons/0.jpg',
+    profilePhoto: 'assets/images/icons/0.jpg',
     contact: [],
     request: [],
     chat: {}
@@ -50,9 +50,9 @@ export class CreateAccountComponent {
   form: FormGroup = this.formBuilder.group({
     //email: ['', [Validators.required, Validators.pattern(/^(?=[^@]*[a-zA-Z])([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/)]], //nunca será null, solo string
     email: ['', [Validators.required, Validators.email]], //nunca será null, solo string
-    password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
-    password_confirmation: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
-    name: ['', [Validators.required], [userNameExistsValidator(this.firestoreService)]],
+    password: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(15), Validators.pattern(/^(?=.*[a-zñ])(?=.*[A-ZÑ])(?=.*\d)(?=.*[.$@$!%*?&])[A-Za-zÑñ\d.$@$!%*?&]+$/)]],
+    password_confirmation: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(15), Validators.pattern(/^(?=.*[a-zñ])(?=.*[A-ZÑ])(?=.*\d)(?=.*[.$@$!%*?&])[A-Za-zÑñ\d.$@$!%*?&]+$/)]],
+    name: ['', [Validators.required], [userNameExistsValidator(this.userService)]],
     birthday: ['', [Validators.required, dateFutureValidatorControl, dateValidValidatorControl]],
   }, {validators: [passwordMatchValidator]});
 
@@ -69,6 +69,14 @@ export class CreateAccountComponent {
     }
   }
 
+showPasswordMatchError() {
+  return this.form.get('password_confirmation')?.touched &&
+    this.form.get('password')?.touched &&
+    (this.form.get("password")?.value != "") &&
+    (this.form.get('password_confirmation')?.value != "") &&
+    this.form.errors?.['passwordMismatch'];
+}
+
   formatDateForMax(): string {
     const today = new Date();
     const year = today.getFullYear();
@@ -78,11 +86,11 @@ export class CreateAccountComponent {
   }
 
   ngOnInit() {
-    this.firestoreService.getUsers().subscribe(users => {
+    /*this.userService.getUsers().subscribe(users => {
       for (const user of users) {
         console.log(user);
       }
-    })
+    })*/
   }
 
 }
