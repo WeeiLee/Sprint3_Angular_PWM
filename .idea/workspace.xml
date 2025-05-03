@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update db.json">
-      <change afterPath="$PROJECT_DIR$/Sprint2/images/audio2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sprint2/images/audio3.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sprint2/images/audio4.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint1/Mockups.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint1/README.md" beforeDir="false" />
@@ -83,33 +80,140 @@
       <change beforePath="$PROJECT_DIR$/Sprint1/templates/voiceChat.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint1/templates/voiceMail.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint1/templates/voiceMailRequest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/data/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/logIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/javascript/logIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/chatPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/example.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/logInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/logInPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/registerPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/userFrameRequestPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/userFrameSendMessage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/userFrameSettings.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/SendMessageStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/bodyFrameWithMessage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/chatRequest.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/logIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/logIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/message.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/voiceChat.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/templates/bodyFrame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/templates/bodyFrameWithMessage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/templates/chatRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/Mockups.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/data/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/aceptar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/audio.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/audio2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/audio3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/audio4.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/audioPlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/audioStop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/audioStories.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/background.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/carta.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/earth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icono.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/icons/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/interrogation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/mark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/microphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/mundo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/onda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/playbutton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/rechazar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/red_dot.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/userphoto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/images/users.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/chatPanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/chatWindow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/createAccount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/logIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/mainPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/messageAudio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/requestWindow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/setting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/userContent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/desktop/ChatPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/desktop/CreateAcoountPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/desktop/EditPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/desktop/HomePage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/desktop/LoginPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/desktop/UserFrameRequestPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/desktop/UserFrameSendPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/desktop/UserFrameSettingsPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/movil/chatPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/movil/createAccountPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/movil/editPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/movil/index.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/movil/loginPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/movil/requestPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/movil/sendChatPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableHorizontal/chatPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableHorizontal/createAccountPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableHorizontal/editPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableHorizontal/index.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableHorizontal/loginPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableHorizontal/sendChatPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableVertical/chatPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableVertical/createAccountPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableVertical/editPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableVertical/index.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableVertical/loginPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/mockups/tableVertical/settingPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/createAccountPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/logInPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/ImageChanger.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/bodyFrame.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/chatWindow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/createAccount.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/editWindow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/homeHeader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/logIn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/mainPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/messageAudio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/messageRequest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/photoCarousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/sendWindow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/settings.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/sp2General.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/templateStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/voiceMessage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/chatPageForMobile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/chatPanel.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint2/templates/chatWindow.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/templates/example.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/templates/message.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/templates/voiceMail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/templates/voiceMailRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/templates/voiceMailRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/templates/voiceMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/createAccount.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/editWindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/homeHeader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/logIn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/messageAudio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/photoCarousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/requestWindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/sendWindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/setting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/toolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/userPhoto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/voiceMailRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/user.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/user.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/validators/createAccount.validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/validators/createAccount.validator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +221,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -125,12 +234,12 @@
     &quot;assignee&quot;: &quot;Evaay&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/IsmaelYanes/PWM-Whisp.git&quot;,
-    &quot;accountId&quot;: &quot;a81e128f-3904-40d7-96c7-443b4f04a3a7&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/WeeiLee/Sprint3_Angular_PWM",
+    "accountId": "1956de10-13e5-4330-9af0-7f76bb13aaa5"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -153,8 +262,8 @@
     "JavaScript Debug.mockHomePage.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/evaay/Desktop/whisp5/Sprint2/images",
+    "git-widget-placeholder": "Srpint3",
+    "last_opened_file_path": "D:/Uni/PWM/Angular",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.stylelint": "true",
@@ -165,23 +274,24 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "ts.external.directory.path": "D:\\Uni\\PWM\\Angular\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Uni\PWM\Angular" />
+      <recent name="D:\Uni\PWM\Angular\Sprint3" />
       <recent name="C:\Users\evaay\Desktop\whisp5\Sprint2\images" />
       <recent name="C:\Users\evaay\Desktop\whisp5\Sprint2\images\icons" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\images" />
-      <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\pages" />
-      <recent name="D:\Uni\PWM\PWM-Whisp\javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Uni\PWM\Angular\Sprint3" />
       <recent name="C:\Users\evaay\Desktop\whisp5\Sprint2\images" />
       <recent name="C:\Users\evaay\Desktop\whisp5\Sprint2\images\icons" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\pages" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\templates" />
-      <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\styles" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.createAccount.html">
@@ -199,6 +309,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.logIn.html" />
+        <item itemvalue="JavaScript Debug.homeHeader.html" />
+        <item itemvalue="JavaScript Debug.header.html" />
         <item itemvalue="JavaScript Debug.createAccount.html" />
         <item itemvalue="JavaScript Debug.logIn.html" />
       </list>
@@ -207,7 +320,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -246,6 +359,10 @@
       <workItem from="1742994165170" duration="3962000" />
       <workItem from="1743005326150" duration="670000" />
       <workItem from="1743024761848" duration="2786000" />
+      <workItem from="1746297622743" duration="228000" />
+      <workItem from="1746299802693" duration="2178000" />
+      <workItem from="1746302157505" duration="79000" />
+      <workItem from="1746302364603" duration="517000" />
     </task>
     <task id="LOCAL-00005" summary="Separate the style from the html file to a css">
       <option name="closed" value="true" />
